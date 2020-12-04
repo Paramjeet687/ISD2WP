@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Basic -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Site Metas -->
+    <title>Edit Product Details</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<style type = "text/css">
+	
+		
+		.latest-blog, .navbar, .navbar-expand-lg, .navbar-light, .bg-light, .navbar-default, .bootsnav{
+			background-image: url("images/ClothesBackgroundPic.jpg");
+			
+		}
+		
+		#navbar-menu{
+			background-color: gray;
+			
+		}
+		
+		#searchbox{
+			background-color: white;
+		}
+		
+		      #addProd{
+      border: 5px solid #f1f1f1;
+	  color: white;
+	  background-color: black;
+      }
+      input[type=text], input[type=password], input[type=email], input[type=file], select {
+      width: 100%;
+      padding: 8px 4px;
+      margin: 4px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      }
+
+      button {
+      background-color: red;
+      color: white;
+      padding: 7px 0;
+      margin: 5px 0;
+      border: none;
+      cursor: grab;
+      width: 48%;
+      }
+      h1 {
+      text-align:center;
+      fone-size:18;
+	  color: white;
+      }
+      button:hover {
+      opacity: 0.8;
+      }
+      .formcontainer {
+      text-align: center;
+      margin: 24px 50px 12px;
+      }
+      .container {
+      padding: 16px 0;
+      text-align:left;
+      }
+      span.psw {
+      float: right;
+      padding-top: 0;
+      padding-right: 15px;
+      }
+      /* Change styles for span on extra small screens */
+      @media screen and (max-width: 300px) {
+      span.psw {
+      display: block;
+      float: none;
+      }
+		
+		
+		
+		
+		
+		
+	</style>
+
+</head>
+
+<body>
+
+    <!-- End Main Top -->
+
+    <!-- Start Main Top -->
+    <header class="main-header">
+        <!-- Start Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-default bootsnav">
+            <div class="container">
+                <!-- Start Header Navigation -->
+                <div class="navbar-header">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+                    
+                </div>
+                <!-- End Header Navigation -->
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="navbar-menu">
+					<a href = "index.html"><img src="images/ReHabAnushkamLogo.PNG" class="logo" alt="logo" width = "200" height = "100"></a>
+                    <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
+                        <li class="nav-item"><a class="nav-link" href="addProduct.html">Add New Product</a></li>
+                        <li class="nav-item"><a class="nav-link" href="viewAllProducts.html">View All Products</a></li>
+                      
+                      
+                       
+						
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+
+                <!-- Start Atribute Navigation -->
+                <div class="attr-nav">
+                 
+                </div>
+                <!-- End Atribute Navigation -->
+            </div>
+            <!-- Start Side Menu -->
+    
+            <!-- End Side Menu -->
+        </nav>
+        <!-- End Navigation -->
+    </header>
+    <!-- End Main Top -->
+
+    <!-- Start Top Search -->
+    <div class="top-search">
+        <div class="container">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                <input type="text" class="form-control" placeholder="Search">
+                <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+            </div>
+        </div>
+    </div>
+    <!-- End Top Search -->
+                   <form action="" id = "addProd" method = "">
+      <h1>Edit product details below</h1>
+    
+      <div class="formcontainer">
+      <div class="container">
+		<label for = "category"><strong>Product Category</strong></label>
+				<select name = "category" id = "category">
+					<option selected> Choose a Category </option>
+					<option> Men </option>
+					<option> Women </option>
+					<option> Children </option>
+					<option> Accessories </option>
+				</select>
+				
+        <label for="productDes"><strong>Product Description</strong></label>
+        <input type="text" placeholder="Enter Product Description" name="productDes" required id = "productDes">
+		
+		<label for="productPrice"><strong>Product Price</strong></label>
+        <input type="text" placeholder="Enter Product Price" name="productPrice" required id = "productPrice">
+		
+		<label for="qty"><strong>Quantity</strong></label>
+        <input type="text" placeholder="Enter Quantity" name="qty" required id = "qty">
+		
+        <label for="img"><strong>Product Image</strong></label>
+        <input type="file" name="img" required id = "img">
+		
+		
+		
+		<br>
+	
+	
+
+      </div>
+
+      <button type="submit" name = "addProdBtn"><strong>SAVE CHANGES</strong></button>
+   
+    </form>
+   
+
+
+
+
+    <!-- Start Footer  -->
+    <footer>
+        <div class="footer-main">
+            
+                
+                   	<div class = "container">
+						
+						<div class="row">
+							
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="footer-widget">
+                            <h4>About ReHab Anushkam</h4>
+                            <p>At ReHab Anushkam, we provide the finest quality of clothing and apparel to our customers globally. We provide clothing and apparel for all audiences be it for men, women, children etc.
+                                </p>
+                            <ul>
+								<img src = "images/socialmedia.jpg" alt = "sm" height = "40" width = "120">
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="footer-link">
+                            <h4>Information</h4>
+                            <ul>
+                                <li><a href="addProduct.html">Add New Product</a></li>
+                                <li><a href="viewAllProducts.html">View All Products</a></li>
+                                
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="footer-link-contact">
+                            <h4>Search for a product here</h4>
+                            <ul>
+								<form action = "" method = "">
+                                <li>
+                                    <p id = "searchbox">
+										<input type = "text" name = "productSearch">
+									
+									</p><br><input type = "submit" value = "Search">
+                                </li>
+                               
+                              
+								</form>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+						
+						
+			
+									 
+                  
+               
+            
+        
+    </footer>
+    <!-- End Footer  -->
+
+    <!-- Start copyright  -->
+    <div class="footer-copyright">
+        <p class="footer-company">&copy; 2020 ReHab Anushkam Clothing & Apparel Pvt Ltd</p>
+    </div>
+    <!-- End copyright  -->
+
+    
+
+    <!-- ALL JS FILES -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/jquery.superslides.min.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+    <script src="js/inewsticker.js"></script>
+    <script src="js/bootsnav.js."></script>
+    <script src="js/images-loded.min.js"></script>
+    <script src="js/isotope.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/baguetteBox.min.js"></script>
+    <script src="js/form-validator.min.js"></script>
+    <script src="js/contact-form-script.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>

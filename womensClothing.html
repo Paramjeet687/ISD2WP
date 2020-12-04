@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Basic -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Site Metas -->
+    <title>Women's Clothing</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<style type = "text/css">
+	
+		
+		.latest-blog, .navbar, .navbar-expand-lg, .navbar-light, .bg-light, .navbar-default, .bootsnav{
+			background-image: url("images/ClothesBackgroundPic.jpg");
+			
+		}
+		
+		#navbar-menu{
+			background-color: gray;
+			
+		}
+		
+		#searchbox{
+			background-color: white;
+		}
+		
+		.dropbtn {
+  background-color: red;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: black;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+		
+		h1{text-align: center;}
+		
+		
+		
+	</style>
+	
+	<script>
+	/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show"); 
+}
+
+function myFunction1()
+{
+document.getElementById("myDropdown2").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+	</script>
+
+</head>
+
+<body>
+
+    <!-- End Main Top -->
+
+    <!-- Start Main Top -->
+    <header class="main-header">
+        <!-- Start Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-default bootsnav">
+            <div class="container">
+                <!-- Start Header Navigation -->
+                <div class="navbar-header">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+                    
+                </div>
+                <!-- End Header Navigation -->
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="navbar-menu">
+					<a href = "index.html"><img src="images/ReHabAnushkamLogo.PNG" class="logo" alt="logo" width = "200" height = "100"></a>
+                    <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
+					<div class = "dropdown">
+						<button onclick = "myFunction()"class="dropbtn">My Account
+						<i class="fa fa-caret-down"></i>
+						</button>
+						<div id="myDropdown" class = "dropdown-content">
+							<a href="editUserAccount.html">Edit Account Details</a>
+							<a href="deleteUserAccount.html">Delete Account</a>
+							
+						</div>
+						</div>
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+						
+						<div class = "dropdown">
+						<button onclick = "myFunction1()"class="dropbtn">Products
+						<i class="fa fa-caret-down"></i>
+						</button>
+						<div id="myDropdown2" class = "dropdown-content">
+							<a href="mensClothing.html">Men's Clothing</a>
+							<a href="womensClothing.html">Women's Clothing</a>
+							<a href="kidsClothing.html">Children's Clothing</a>
+							<a href="accessories.html">Accessories</a>
+							
+						</div>
+						</div>
+                      
+                        <li class="nav-item"><a class="nav-link" href="login.html">Sign Out</a></li>
+                        
+						
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+
+                <!-- Start Atribute Navigation -->
+                <div class="attr-nav">
+                 
+                </div>
+                <!-- End Atribute Navigation -->
+            </div>
+            <!-- Start Side Menu -->
+
+            <!-- End Side Menu -->
+        </nav>
+        <!-- End Navigation -->
+    </header>
+    <!-- End Main Top -->
+
+    <!-- Start Top Search -->
+    <div class="top-search">
+        <div class="container">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                <input type="text" class="form-control" placeholder="Search">
+                <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+            </div>
+        </div>
+    </div>
+	<h1> Clothing for Women </h1>
+  <div class="row product-categorie-box">
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane fade show active" id="grid-view">
+                                    <div class="row">
+                                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                                            <div class="products-single fix">
+                                                <div class="box-img-hover">
+                                                 
+                                                 
+                                                    <img src="images/womenwinter.jpg" class="img-fluid" alt="Image">
+                                                    <div class="mask-icon">
+                                                  
+                                                        <a class="cart" href="#">Add to Cart</a>
+                                                    </div>
+                                                </div>
+                                                <div class="why-text">
+                                                    <h4>Winter Jogging Jackets for Women</h4>
+                                                    <h5> $10.00</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                                            <div class="products-single fix">
+                                                <div class="box-img-hover">
+                                                 
+                                                    <img src="images/partydress.jpg" class="img-fluid" alt="Image">
+                                                    <div class="mask-icon">
+                                                 
+                                                        <a class="cart" href="#">Add to Cart</a>
+                                                    </div>
+                                                </div>
+                                                <div class="why-text">
+                                                    <h4>Party Dress for Women</h4>
+                                                    <h5> $14.00</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                                            <div class="products-single fix">
+                                                <div class="box-img-hover">
+                                                
+                                                    <img src="images/formalwomensuit.jpg" class="img-fluid" alt="Image">
+                                                    <div class="mask-icon">
+                                                      
+                                                        <a class="cart" href="#">Add to Cart</a>
+                                                    </div>
+                                                </div>
+                                                <div class="why-text">
+                                                    <h4>Office and Work outfit for women</h4>
+                                                    <h5> $15.00</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                                            <div class="products-single fix">
+                                                <div class="box-img-hover">
+                                                    
+                                                    <img src="images/womentracksuit.jpg" class="img-fluid" alt="Image">
+                                                    <div class="mask-icon">
+                                                   
+                                                        <a class="cart" href="#">Add to Cart</a>
+                                                    </div>
+                                                </div>
+                                                <div class="why-text">
+                                                    <h4>Full Tracksuit outfit for women</h4>
+                                                    <h5> $9.00</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                                            <div class="products-single fix">
+                                                <div class="box-img-hover">
+                                                   
+                                                    <img src="images/womenskinnyjeans.jpg" class="img-fluid" alt="Image">
+                                                    <div class="mask-icon">
+                                                      
+                                                        <a class="cart" href="#">Add to Cart</a>
+                                                    </div>
+                                                </div>
+                                                <div class="why-text">
+                                                    <h4>Women's Skinny Jeans</h4>
+                                                    <h5> $8.00</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                                            <div class="products-single fix">
+                                                <div class="box-img-hover">
+                                               
+                                                    <img src="images/popcultwomen.jpg" class="img-fluid" alt="Image">
+                                                    <div class="mask-icon">
+                                                 
+                                                        <a class="cart" href="#">Add to Cart</a>
+                                                    </div>
+                                                </div>
+                                                <div class="why-text">
+                                                    <h4>Women's Pop Culture Themed T-Shirts</h4>
+                                                    <h5> $12.00</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                                            <div class="products-single fix">
+                                                <div class="box-img-hover">
+                                                    
+                                                    <img src="images/img-pro-03.jpg" class="img-fluid" alt="Image">
+                                                    <div class="mask-icon">
+                                                    
+                                                        <a class="cart" href="#">Add to Cart</a>
+                                                    </div>
+                                                </div>
+                                                <div class="why-text">
+                                                    <h4>Handbags for women</h4>
+                                                    <h5> $10.00</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                                            <div class="products-single fix">
+                                                <div class="box-img-hover">
+                                                 
+                                                    <img src="images/highheels.jpg" class="img-fluid" alt="Image">
+                                                    <div class="mask-icon">
+                                                    
+                                                        <a class="cart" href="#">Add to Cart</a>
+                                                    </div>
+                                                </div>
+                                                <div class="why-text">
+                                                    <h4>High Heel Shoes</h4>
+                                                    <h5> $18.00</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                                            <div class="products-single fix">
+                                                <div class="box-img-hover">
+                                               
+                                                    <img src="images/saree.jpg" class="img-fluid" alt="Image">
+                                                    <div class="mask-icon">
+                                                     
+                                                        <a class="cart" href="#">Add to Cart</a>
+                                                    </div>
+                                                </div>
+                                                <div class="why-text">
+                                                    <h4>Traditional Sarees for Women</h4>
+                                                    <h5> $5.00</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Start Footer  -->
+    <footer>
+        <div class="footer-main">
+            
+                
+                   	<div class = "container">
+						
+						<div class="row">
+							
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="footer-widget">
+                            <h4>About ReHab Anushkam</h4>
+                            <p>At ReHab Anushkam, we provide the finest quality of clothing and apparel to our customers globally. We provide clothing and apparel for all audiences be it for men, women, children etc.
+                                </p>
+                            <ul>
+								<img src = "images/socialmedia.jpg" alt = "sm" height = "40" width = "120">
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="footer-link">
+                            <h4>Information</h4>
+                            <ul>
+                                <li><a href="aboutus.html">About Us</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="login.html">Sign Out</a></li>
+                                
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="footer-link-contact">
+                            <h4>Search for a product here</h4>
+                            <ul>
+								<form action = "" method = "">
+                                <li>
+                                    <p id = "searchbox">
+										<input type = "text" name = "productSearch">
+									
+									</p><br><input type = "submit" value = "Search">
+                                </li>
+                               
+                              
+								</form>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+						
+						
+			
+									 
+                  
+               
+            
+        
+    </footer>
+    <!-- End Footer  -->
+
+    <!-- Start copyright  -->
+    <div class="footer-copyright">
+        <p class="footer-company">&copy; 2020 ReHab Anushkam Clothing & Apparel Pvt Ltd</p>
+    </div>
+    <!-- End copyright  -->
+
+    
+
+    <!-- ALL JS FILES -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/jquery.superslides.min.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+    <script src="js/inewsticker.js"></script>
+    <script src="js/bootsnav.js."></script>
+    <script src="js/images-loded.min.js"></script>
+    <script src="js/isotope.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/baguetteBox.min.js"></script>
+    <script src="js/form-validator.min.js"></script>
+    <script src="js/contact-form-script.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
